@@ -1,90 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Dennis Yutong Wang — AI Data Engineer and Product Manager. Find my GitHub and LinkedIn profiles.">
-  <meta name="theme-color" content="#f8f7f4">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Dennis Yutong Wang</title>
-  <style>
-    :root { color-scheme: light; --paper:#f8f7f4; --ink:#242724; --muted:#666b65; --line:#dddeda; --accent:#aa483b; }
-    * { box-sizing: border-box; }
-    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; line-height:1.6; }
-    a { color:inherit; }
-    a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
-    .skip { position:absolute; left:16px; top:-100px; padding:8px 14px; background:#fff; z-index:2; }
-    .skip:focus { top:12px; }
-    .shell { width:min(100% - 48px,820px); margin:0 auto; }
-    header { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:30px 0; border-bottom:1px solid var(--line); }
-    .wordmark { font-size:16px; font-weight:750; letter-spacing:-.04em; }
-    .header-label { color:var(--muted); font-size:12px; letter-spacing:.13em; text-transform:uppercase; }
-    main { padding:76px 0 72px; }
-    .avatar { position:relative; display:grid; place-items:center; width:86px; height:86px; margin-bottom:28px; border-radius:50%; background:#e9e6df; color:var(--muted); font-size:24px; font-weight:650; overflow:hidden; }
-    .avatar img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-    .eyebrow { margin:0 0 14px; color:var(--accent); font-size:12px; font-weight:650; letter-spacing:.16em; text-transform:uppercase; }
-    h1 { max-width:720px; margin:0; font-size:clamp(38px,7.5vw,64px); font-weight:650; letter-spacing:-.055em; line-height:1.1; text-wrap:balance; }
-    .bio { margin:22px 0 0; font-size:clamp(16px,2.4vw,20px); color:var(--muted); }
-    .divider { display:inline-block; padding:0 8px; color:#a6aaa3; }
-    .section-heading { margin:52px 0 16px; font-size:12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
-    .links { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-    .link-card { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:24px; border:1px solid var(--line); border-radius:14px; background:#fff; text-decoration:none; transition:border-color .16s ease,transform .16s ease; }
-    .link-card:hover { border-color:var(--accent); transform:translateY(-2px); }
-    .link-title { display:block; font-size:18px; font-weight:650; letter-spacing:-.02em; }
-    .link-detail { display:block; margin-top:3px; color:var(--muted); font-size:13px; }
-    .arrow { font-size:25px; color:var(--accent); }
-    footer { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; padding:23px 0 32px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; }
-    .domain { overflow-wrap:anywhere; }
-    @media(max-width:560px) {
-      .shell { width:calc(100% - 36px); }
-      header { padding:23px 0; }
-      main { padding:46px 0 44px; }
-      .links { grid-template-columns:1fr; }
-      .section-heading { margin-top:36px; }
-      .link-card { padding:20px; }
-      .bio span { display:block; }
-      .bio .divider { display:none; }
-    }
-    @media(prefers-reduced-motion:reduce) {
-      .link-card { transition:none; }
-      .link-card:hover { transform:none; }
-    }
-  </style>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>王宇同 Dennis Wang · 从问题到产品</title>
+  <meta name="description" content="王宇同，康奈尔大学信息科学硕士在读。探索数据科学、因果实验与可信 AI 产品之间的连接。">
+  <meta name="theme-color" content="#101511">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101511'/%3E%3Cpath d='M15 19h10c19 0 19 26 0 26H15z' fill='none' stroke='%23d7fa89' stroke-width='5'/%3E%3Ccircle cx='48' cy='43' r='4' fill='%23d7fa89'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <div class="shell">
-    <header>
-      <span class="wordmark">DW.</span>
-      <span class="header-label">Personal website</span>
-    </header>
-    <main id="main">
-      <!-- Public GitHub avatar; replace this URL with a local image to customize. -->
-      <div class="avatar">
-        <span aria-hidden="true">DW</span>
-        <img src="https://avatars.githubusercontent.com/u/228614792?v=4" alt="GitHub profile avatar" width="86" height="86" decoding="async" onerror="this.hidden=true">
-      </div>
-      <!-- Edit the name and professional description below. -->
-      <p class="eyebrow">Welcome to my corner of the web</p>
-      <h1>Dennis Yutong Wang</h1>
-      <p class="bio"><span>AI Data Engineer</span><span class="divider" aria-hidden="true">|</span><span>Product Manager</span></p>
-      <h2 class="section-heading">Find me online</h2>
-      <!-- These are existing public profiles, not placeholder links. -->
-      <nav class="links" aria-label="Professional profiles">
-        <a class="link-card" href="https://www.linkedin.com/in/yutong-wang-6043b4380/" target="_blank" rel="noopener noreferrer">
-          <span><span class="link-title">LinkedIn</span><span class="link-detail">Connect with me</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="link-card" href="https://github.com/Dennis-Sosa" target="_blank" rel="noopener noreferrer">
-          <span><span class="link-title">GitHub</span><span class="link-detail">Explore my code and projects</span></span>
-          <span class="arrow" aria-hidden="true">↗</span>
-        </a>
-      </nav>
-    </main>
-    <footer>
-      <span>Dennis Yutong Wang</span>
-      <span class="domain">dennisyutongwang.com</span>
-    </footer>
-  </div>
+<a class="skip" href="#main">跳至正文</a>
+<header class="site-header wrap">
+  <a class="brand" href="#" aria-label="Dennis Wang 首页">dw<span>.</span></a>
+  <nav aria-label="主导航"><a href="#work" data-zh="精选实践" data-en="Selected work">精选实践</a><a href="#lab" data-zh="思考实验室" data-en="Thinking lab">思考实验室</a><a href="#about" data-zh="关于我" data-en="About">关于我</a></nav>
+  <button class="lang-btn" id="language" aria-label="Switch to English">EN <span aria-hidden="true">/ 中</span></button>
+</header>
+<main id="main">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="short-line"></span> DENNIS YUTONG WANG <span class="name-cn">/ 王宇同</span></div>
+      <h1 id="hero-title" data-zh="好问题，<br>值得被<span class='serif-accent'>做出来。</span>" data-en="Good questions.<br><span class='serif-accent'>Made real.</span>">好问题，<br>值得被<span class="serif-accent">做出来。</span></h1>
+      <p class="hero-description" data-zh="用数据找到机会，用实验验证判断，<br>把 AI 做成可靠的产品。" data-en="Find opportunities in data. Test the assumptions.<br>Build AI products people can trust.">用数据找到机会，用实验验证判断，<br>把 AI 做成可靠的产品。</p>
+      <div class="hero-actions"><a class="button primary" href="#work" data-zh="看我如何解决问题" data-en="Explore my work">看我如何解决问题</a><a class="text-link" href="mailto:yw2799@cornell.edu" data-zh="聊聊你的想法" data-en="Let’s talk">聊聊你的想法</a></div>
+      <div class="hero-footnote"><span>CORNELL ’27</span><span>DATA SCIENCE × AI PRODUCT</span></div>
+    </div>
+    <div class="signal-map" aria-label="从问题、证据到决策的工作方式">
+      <div class="map-top"><span>THE WAY I THINK</span><span>FIG. 01</span></div>
+      <svg class="orbit" viewBox="0 0 520 440" aria-hidden="true"><defs><radialGradient id="glow"><stop stop-color="#b6db72" stop-opacity=".13"/><stop offset="1" stop-color="#b6db72" stop-opacity="0"/></radialGradient></defs><circle cx="260" cy="226" r="205" fill="url(#glow)"/><circle class="orbit-ring" cx="260" cy="226" r="160"/><circle class="orbit-ring faint" cx="260" cy="226" r="118"/><path class="orbit-path" d="M75 112 Q320 25 435 185 T129 362 T75 112"/><path class="crosshair" d="M260 22v407M32 226h456"/><circle cx="260" cy="66" r="4" class="signal-dot"/><circle cx="420" cy="226" r="4" class="signal-dot"/><circle cx="122" cy="306" r="4" class="signal-dot"/></svg>
+      <div class="map-core"><span>QUESTION</span><strong data-zh="真正的问题<br>是什么？" data-en="What is the<br>real question?">真正的问题<br>是什么？</strong><i>↓</i></div>
+      <div class="map-note note-evidence"><span class="note-index">01 / EVIDENCE</span><strong data-zh="找到证据" data-en="Find the evidence">找到证据</strong><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small data-zh="指标 · 因果 · 实验" data-en="Metrics · Causality · Experiments">指标 · 因果 · 实验</small></div>
+      <div class="map-note note-product"><span class="note-index">02 / BUILD</span><strong data-zh="把判断做成产品" data-en="Build the next step">把判断做成产品</strong><div class="mini-flow"><span>INPUT</span><b>···</b><span>AGENT</span><b>···</b><span>PROOF</span></div><small data-zh="设计 · 评测 · 迭代" data-en="Design · Evaluate · Iterate">设计 · 评测 · 迭代</small></div>
+      <div class="map-bottom"><span class="plus">+</span><span data-zh="CURIOSITY IN. CLARITY OUT." data-en="CURIOSITY IN. CLARITY OUT.">CURIOSITY IN. CLARITY OUT.</span><span class="plus">+</span></div>
+    </div>
+  </section>
+  <div class="experience-strip wrap"><span data-zh="我的问题现场" data-en="WHERE I’VE WORKED">我的问题现场</span><strong>腾讯音乐 <small>TENCENT MUSIC</small></strong><strong>快手 <small>KWAI</small></strong><strong>小红书 <small>XIAOHONGSHU</small></strong><strong>Cornell <small>INFORMATION SCIENCE</small></strong></div>
+  <section id="work" class="section wrap"><div class="section-head"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 data-zh="每一个数字背后，<br>都有一个值得解决的问题。" data-en="Behind every metric,<br>a problem worth solving.">每一个数字背后，<br>都有一个值得解决的问题。</h2></div><p class="section-aside" data-zh="从增长决策到 AI 可靠性，<br>让方法接受真实问题的检验。" data-en="From growth decisions to reliable AI.<br>Methods tested against real problems.">从增长决策到 AI 可靠性，<br>让方法接受真实问题的检验。</p></div><div id="case-list"></div></section>
+  <section id="lab" class="section wrap"></section>
+  <section id="about" class="section wrap"></section>
+</main>
+<footer class="wrap"><span>Dennis Yutong Wang</span><span>DATA → EVIDENCE → DECISIONS</span><a href="#" data-zh="回到顶部" data-en="Back to top">回到顶部</a></footer>
 </body>
 </html>
